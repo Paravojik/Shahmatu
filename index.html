@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+
+    </style>
+</head>
+<body>
+    <canvas id="example">
+        
+    </canvas>
+    <canvas id="example1"></canvas>
+    <canvas id="example2"></canvas>
+    <canvas id="kintb"></canvas>
+    <script>
+        let example = document.getElementById('example')
+        let ctx = example.getContext('2d')
+        example.width  =286;
+        example.height = 286;
+        ctx.strokeStyle='orange'
+        ctx.strokeRect(15,15,266,266)
+        ctx.strokeRect(18,18,260,260)
+        ctx.fillStyle='#ab5d1d'
+        ctx.fillRect(20,20,256,256)
+        for(let i=0;i<8;i+=2){
+            for(let j=0;j<8;j+=2){
+                ctx.clearRect(20+i*32,20+j*32,32,32)
+                ctx.clearRect(20+(i+1)*32,20+(j+1)*32,32,32)
+            }
+            
+        }
+        let example1 = document.getElementById('example1')
+        let ctx1 = example.getContext('2d')
+        example1.width  =32;
+        example1.height = 32;
+        ctx1.strokeStyle='red'
+        ctx1.strokeRect(20,20,32,32)
+        ctx1.fillStyle='black'
+        let c =20;
+     ctx1.fillRect(5+c,26+c,22,4)
+     ctx1.fillRect(8+c,14+c,16,12)
+     ctx1.fillRect(5+c,10+c,22,4)
+     ctx1.fillRect(5+c,3+c,3,6)
+     ctx1.fillRect(14+c,1+c,4,8)
+     ctx1.fillRect(24+c,3+c,3,6)
+     let example2 = document.getElementById('example2')
+        let ctx2 = example.getContext('2d')
+        example2.width  =32;
+        example2.height = 32;
+        ctx2.strokeStyle='red'
+        ctx2.strokeRect(244,20,32,32)
+        ctx2.fillStyle='black'
+        let q =244;
+     ctx2.fillRect(5+q,26+c,22,4)
+     ctx2.fillRect(8+q,14+c,16,12)
+     ctx2.fillRect(5+q,10+c,22,4)
+     ctx2.fillRect(5+q,3+c,3,6)
+     ctx2.fillRect(14+q,1+c,4,8)
+     ctx2.fillRect(24+q,3+c,3,6)
+     let kin = document.getElementById('kintb')
+        let ctx3 = example.getContext('2d')
+        kin.width  =32;
+        kin.height = 32;
+        ctx3.strokeStyle='red'
+        ctx3.strokeRect(52,20,32,32)
+        let k=52
+        ctx3.fillStyle='black'
+        ctx3.fillRect(5+k,26+c,22,4)
+        ctx3.fillRect(8+k,21+c,16,5)
+        ctx3.fillRect(6+k,11+c,20,10)
+      
+       
+        ctx.beginPath()
+        ctx.fillStyle='#ab5d1d'
+         ctx.arc(24+k,10+c,7,4/4*Math.PI,0/4*Math.PI,true)
+        ctx.fill()
+        ctx.closePath()
+        ctx.fillStyle='black'
+        ctx.fillRect(7+k,5+c,10,6)
+        ctx.fillRect(12+k,5+c,12,4)
+        ctx.fillRect(8+k,2+c,3,3)
+        ctx.beginPath()
+        
+         ctx.arc(18+k,8+c,3,4/4*Math.PI,0/4*Math.PI,true)
+        ctx.fill()
+        ctx.closePath()
+        ctx.fillStyle='#e8d62e'
+        ctx.fillRect(7+k,10+c,12,1)
+        ctx.beginPath()
+        
+        ctx.arc(10+k,7+c,1.3,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+    //    ctx.moveTo(10+k,10+c)
+    //    ctx.lineTo(20+k,10+c)
+    //    ctx.strokeStyle='#ebe07c'
+    //    ctx.stroke()
+       ctx.closePath()
+
+
+
+
+
+
+
+       ctx3.strokeStyle='red'
+        ctx3.strokeRect(212,20,32,32)
+        let k2=212
+        ctx3.fillStyle='black'
+        ctx3.fillRect(5+k2,26+c,22,4)
+        ctx3.fillRect(8+k2,21+c,16,5)
+        ctx3.fillRect(6+k2,11+c,20,10)
+      
+       
+        ctx.beginPath()
+        ctx.fillStyle='white'
+         ctx.arc(24+k2,10+c,7,4/4*Math.PI,0/4*Math.PI,true)
+        ctx.fill()
+        ctx.closePath()
+        ctx.fillStyle='black'
+        ctx.fillRect(7+k2,5+c,10,6)
+        ctx.fillRect(12+k2,5+c,12,4)
+        ctx.fillRect(8+k2,2+c,3,3)
+        ctx.beginPath()
+        
+         ctx.arc(18+k2,8+c,3,4/4*Math.PI,0/4*Math.PI,true)
+        ctx.fill()
+        ctx.closePath()
+        ctx.fillStyle='#e8d62e'
+        ctx.fillRect(7+k2,10+c,12,1)
+        ctx.beginPath()
+        
+        ctx.arc(10+k2,7+c,1.3,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+    //    ctx.moveTo(10+k,10+c)
+    //    ctx.lineTo(20+k,10+c)
+    //    ctx.strokeStyle='#ebe07c'
+    //    ctx.stroke()
+       ctx.closePath()
+
+
+
+
+
+
+       ctx.strokeStyle='red'
+        ctx.strokeRect(84,20,32,32)
+        let o=84
+        ctx.fillStyle='black'
+        ctx.fillRect(3+o,28+c,26,2)
+        ctx.fillRect(4+o,26+c,24,2)
+        ctx.fillRect(10+o,18+c,12,8)
+        ctx.fillRect(7+o,16+c,18,2)
+        ctx.fillRect(12+o,14+c,8,2)
+        ctx.beginPath()
+        
+        ctx.arc(16+o,11+c,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+        ctx.arc(16+o,5+c,2,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+
+       ctx.strokeStyle='red'
+        ctx.strokeRect(180,20,32,32)
+        let o2=180
+        ctx.fillStyle='black'
+        ctx.fillRect(3+o2,28+c,26,2)
+        ctx.fillRect(4+o2,26+c,24,2)
+        ctx.fillRect(10+o2,18+c,12,8)
+        ctx.fillRect(7+o2,16+c,18,2)
+        ctx.fillRect(12+o2,14+c,8,2)
+        ctx.beginPath()
+        
+        ctx.arc(16+o2,11+c,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+        ctx.arc(16+o2,5+c,2,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+
+
+       ctx.strokeStyle='red'
+        ctx.strokeRect(148,20,32,32)
+        let king=148
+        ctx.fillStyle='black'
+        ctx.fillRect(3+king,28+c,26,2)
+        ctx.fillRect(5+king,25+c,22,3)
+        ctx.fillRect(9+king,22+c,14,3)
+        ctx.fillRect(11+king,14+c,10,8)
+        ctx.fillRect(9+king,11+c,14,3)
+        ctx.fillRect(12+king,8+c,8,3)
+        ctx.fillRect(11+king,6+c,10,2)
+        ctx.fillRect(15+king,1+c,2,6)
+        ctx.fillRect(13+king,2+c,6,2)
+
+
+
+
+
+        ctx.strokeStyle='red'
+        ctx.strokeRect(116,20,32,32)
+        let quin=116
+        ctx.fillStyle='black'
+        ctx.fillRect(3+quin,28+c,26,2)
+        ctx.fillRect(5+quin,25+c,22,3)
+        ctx.fillRect(9+quin,22+c,14,3)
+        ctx.fillRect(11+quin,16+c,10,6)
+        ctx.fillRect(9+quin,13+c,14,3)
+        ctx.fillRect(12+quin,10+c,8,3)
+        ctx.fillRect(11+quin,7+c,10,3)
+        ctx.fillRect(15+quin,2+c,2,6)
+        ctx.beginPath()
+        ctx.arc(19+quin,7+c,3,0.5/4*Math.PI,3.5/4*Math.PI,true)
+        ctx.arc(13+quin,7+c,3,0.5/4*Math.PI,3.5/4*Math.PI,true)
+        // ctx.arc(16+quin,5+c,2,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(20,52,32,32)
+        ctx1.fillStyle='black'
+        let r2 =52
+     ctx1.fillRect(5+c,26+r2,22,4)
+     ctx1.fillRect(8+c,23+r2,16,3)
+     ctx1.fillRect(11+c,15+r2,10,8)
+     ctx1.fillRect(9+c,13+r2,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+c,8+r2,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(52,52,32,32)
+        ctx1.fillStyle='black'
+     ctx1.fillRect(5+k,26+r2,22,4)
+     ctx1.fillRect(8+k,23+r2,16,3)
+     ctx1.fillRect(11+k,15+r2,10,8)
+     ctx1.fillRect(9+k,13+r2,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+k,8+r2,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(84,52,32,32)
+        ctx1.fillStyle='black'
+     ctx1.fillRect(5+o,26+r2,22,4)
+     ctx1.fillRect(8+o,23+r2,16,3)
+     ctx1.fillRect(11+o,15+r2,10,8)
+     ctx1.fillRect(9+o,13+r2,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+o,8+r2,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(116,52,32,32)
+        ctx1.fillStyle='black'
+     ctx1.fillRect(5+quin,26+r2,22,4)
+     ctx1.fillRect(8+quin,23+r2,16,3)
+     ctx1.fillRect(11+quin,15+r2,10,8)
+     ctx1.fillRect(9+quin,13+r2,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+quin,8+r2,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(148,52,32,32)
+        ctx1.fillStyle='black'
+     ctx1.fillRect(5+king,26+r2,22,4)
+     ctx1.fillRect(8+king,23+r2,16,3)
+     ctx1.fillRect(11+king,15+r2,10,8)
+     ctx1.fillRect(9+king,13+r2,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+king,8+r2,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(180,52,32,32)
+        ctx1.fillStyle='black'
+     ctx1.fillRect(5+o2,26+r2,22,4)
+     ctx1.fillRect(8+o2,23+r2,16,3)
+     ctx1.fillRect(11+o2,15+r2,10,8)
+     ctx1.fillRect(9+o2,13+r2,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+o2,8+r2,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(212,52,32,32)
+        ctx1.fillStyle='black'
+     ctx1.fillRect(5+k2,26+r2,22,4)
+     ctx1.fillRect(8+k2,23+r2,16,3)
+     ctx1.fillRect(11+k2,15+r2,10,8)
+     ctx1.fillRect(9+k2,13+r2,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+k2,8+r2,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(244,52,32,32)
+        ctx1.fillStyle='black'
+     ctx1.fillRect(5+q,26+r2,22,4)
+     ctx1.fillRect(8+q,23+r2,16,3)
+     ctx1.fillRect(11+q,15+r2,10,8)
+     ctx1.fillRect(9+q,13+r2,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+q,8+r2,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(20,212,32,32)
+        ctx1.fillStyle='#e8d62e'
+        let r7 =212
+     ctx1.fillRect(5+c,26+r7,22,4)
+     ctx1.fillRect(8+c,23+r7,16,3)
+     ctx1.fillRect(11+c,15+r7,10,8)
+     ctx1.fillRect(9+c,13+r7,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+c,8+r7,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(52,r7,32,32)
+        ctx1.fillStyle='#e8d62e'
+     ctx1.fillRect(5+k,26+r7,22,4)
+     ctx1.fillRect(8+k,23+r7,16,3)
+     ctx1.fillRect(11+k,15+r7,10,8)
+     ctx1.fillRect(9+k,13+r7,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+k,8+r7,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(84,r7,32,32)
+        ctx1.fillStyle='#e8d62e'
+     ctx1.fillRect(5+o,26+r7,22,4)
+     ctx1.fillRect(8+o,23+r7,16,3)
+     ctx1.fillRect(11+o,15+r7,10,8)
+     ctx1.fillRect(9+o,13+r7,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+o,8+r7,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(116,r7,32,32)
+        ctx1.fillStyle='#e8d62e'
+     ctx1.fillRect(5+quin,26+r7,22,4)
+     ctx1.fillRect(8+quin,23+r7,16,3)
+     ctx1.fillRect(11+quin,15+r7,10,8)
+     ctx1.fillRect(9+quin,13+r7,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+quin,8+r7,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(148,r7,32,32)
+        ctx1.fillStyle='#e8d62e'
+     ctx1.fillRect(5+king,26+r7,22,4)
+     ctx1.fillRect(8+king,23+r7,16,3)
+     ctx1.fillRect(11+king,15+r7,10,8)
+     ctx1.fillRect(9+king,13+r7,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+king,8+r7,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(180,r7,32,32)
+        ctx1.fillStyle='#e8d62e'
+     ctx1.fillRect(5+o2,26+r7,22,4)
+     ctx1.fillRect(8+o2,23+r7,16,3)
+     ctx1.fillRect(11+o2,15+r7,10,8)
+     ctx1.fillRect(9+o2,13+r7,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+o2,8+r7,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(212,r7,32,32)
+        ctx1.fillStyle='#e8d62e'
+     ctx1.fillRect(5+k2,26+r7,22,4)
+     ctx1.fillRect(8+k2,23+r7,16,3)
+     ctx1.fillRect(11+k2,15+r7,10,8)
+     ctx1.fillRect(9+k2,13+r7,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+k2,8+r7,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(244,r7,32,32)
+        ctx1.fillStyle='#e8d62e'
+     ctx1.fillRect(5+q,26+r7,22,4)
+     ctx1.fillRect(8+q,23+r7,16,3)
+     ctx1.fillRect(11+q,15+r7,10,8)
+     ctx1.fillRect(9+q,13+r7,14,2)
+     ctx.beginPath()
+        
+        ctx.arc(16+q,8+r7,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+
+
+
+
+
+
+
+
+let r8 =244
+       ctx1.strokeStyle='red'
+        ctx1.strokeRect(20,r8,32,32)
+        ctx1.fillStyle='#e8d62e'
+       
+     ctx1.fillRect(5+c,26+r8,22,4)
+     ctx1.fillRect(8+c,14+r8,16,12)
+     ctx1.fillRect(5+c,10+r8,22,4)
+     ctx1.fillRect(5+c,3+r8,3,6)
+     ctx1.fillRect(14+c,1+r8,4,8)
+     ctx1.fillRect(24+c,3+r8,3,6)
+ 
+     
+        ctx2.strokeStyle='red'
+        ctx2.strokeRect(244,r8,32,32)
+        ctx2.fillStyle='#e8d62e'
+       
+     ctx2.fillRect(5+q,26+r8,22,4)
+     ctx2.fillRect(8+q,14+r8,16,12)
+     ctx2.fillRect(5+q,10+r8,22,4)
+     ctx2.fillRect(5+q,3+r8,3,6)
+     ctx2.fillRect(14+q,1+r8,4,8)
+     ctx2.fillRect(24+q,3+r8,3,6)
+  
+        ctx3.strokeStyle='red'
+        ctx3.strokeRect(52,r8,32,32)
+       
+        ctx3.fillStyle='#e8d62e'
+        ctx3.fillRect(5+k,26+r8,22,4)
+        ctx3.fillRect(8+k,21+r8,16,5)
+        ctx3.fillRect(6+k,11+r8,20,10)
+      
+       
+        ctx.beginPath()
+        ctx.fillStyle='white'
+         ctx.arc(24+k,10+r8,7,4/4*Math.PI,0/4*Math.PI,true)
+        ctx.fill()
+        ctx.closePath()
+        ctx.fillStyle='#e8d62e'
+        ctx.fillRect(7+k,5+r8,10,6)
+        ctx.fillRect(12+k,5+r8,12,4)
+        ctx.fillRect(8+k,2+r8,3,3)
+        ctx.beginPath()
+        
+         ctx.arc(18+k,8+r8,3,4/4*Math.PI,0/4*Math.PI,true)
+        ctx.fill()
+        ctx.closePath()
+        ctx.fillStyle='black'
+        ctx.fillRect(7+k,10+r8,12,1)
+        ctx.beginPath()
+        
+        ctx.arc(10+k,7+r8,1.3,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+    //    ctx.moveTo(10+k,10+c)
+    //    ctx.lineTo(20+k,10+c)
+    //    ctx.strokeStyle='#ebe07c'
+    //    ctx.stroke()
+       ctx.closePath()
+
+
+
+
+
+
+
+       ctx3.strokeStyle='red'
+        ctx3.strokeRect(212,r8,32,32)
+       
+        ctx3.fillStyle='#e8d62e'
+        ctx3.fillRect(5+k2,26+r8,22,4)
+        ctx3.fillRect(8+k2,21+r8,16,5)
+        ctx3.fillRect(6+k2,11+r8,20,10)
+      
+       
+        ctx.beginPath()
+        ctx.fillStyle='#ab5d1d'
+         ctx.arc(24+k2,10+r8,7,4/4*Math.PI,0/4*Math.PI,true)
+        ctx.fill()
+        ctx.closePath()
+        ctx.fillStyle='#e8d62e'
+        ctx.fillRect(7+k2,5+r8,10,6)
+        ctx.fillRect(12+k2,5+r8,12,4)
+        ctx.fillRect(8+k2,2+r8,3,3)
+        ctx.beginPath()
+        
+         ctx.arc(18+k2,8+r8,3,4/4*Math.PI,0/4*Math.PI,true)
+        ctx.fill()
+        ctx.closePath()
+        ctx.fillStyle='black'
+        ctx.fillRect(7+k2,10+r8,12,1)
+        ctx.beginPath()
+        
+        ctx.arc(10+k2,7+r8,1.3,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+    //    ctx.moveTo(10+k,10+c)
+    //    ctx.lineTo(20+k,10+c)
+    //    ctx.strokeStyle='#ebe07c'
+    //    ctx.stroke()
+       ctx.closePath()
+
+
+
+
+
+
+       ctx.strokeStyle='red'
+        ctx.strokeRect(84,r8,32,32)
+    
+        ctx.fillStyle='#e8d62e'
+        ctx.fillRect(3+o,28+r8,26,2)
+        ctx.fillRect(4+o,26+r8,24,2)
+        ctx.fillRect(10+o,18+r8,12,8)
+        ctx.fillRect(7+o,16+r8,18,2)
+        ctx.fillRect(12+o,14+r8,8,2)
+        ctx.beginPath()
+        
+        ctx.arc(16+o,11+r8,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+        ctx.arc(16+o,5+r8,2,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+
+       ctx.strokeStyle='red'
+        ctx.strokeRect(180,r8,32,32)
+       
+        ctx.fillStyle='#e8d62e'
+        ctx.fillRect(3+o2,28+r8,26,2)
+        ctx.fillRect(4+o2,26+r8,24,2)
+        ctx.fillRect(10+o2,18+r8,12,8)
+        ctx.fillRect(7+o2,16+r8,18,2)
+        ctx.fillRect(12+o2,14+r8,8,2)
+        ctx.beginPath()
+        
+        ctx.arc(16+o2,11+r8,5,3.999999/4*Math.PI,4/4*Math.PI,true)
+        ctx.arc(16+o2,5+r8,2,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+
+
+
+
+
+
+       ctx.strokeStyle='red'
+        ctx.strokeRect(148,r8,32,32)
+       
+        ctx.fillStyle='#e8d62e'
+        ctx.fillRect(3+king,28+r8,26,2)
+        ctx.fillRect(5+king,25+r8,22,3)
+        ctx.fillRect(9+king,22+r8,14,3)
+        ctx.fillRect(11+king,14+r8,10,8)
+        ctx.fillRect(9+king,11+r8,14,3)
+        ctx.fillRect(12+king,8+r8,8,3)
+        ctx.fillRect(11+king,6+r8,10,2)
+        ctx.fillRect(15+king,1+r8,2,6)
+        ctx.fillRect(13+king,2+r8,6,2)
+
+
+
+
+
+        ctx.strokeStyle='red'
+        ctx.strokeRect(116,r8,32,32)
+        
+        ctx.fillStyle='#e8d62e'
+        ctx.fillRect(3+quin,28+r8,26,2)
+        ctx.fillRect(5+quin,25+r8,22,3)
+        ctx.fillRect(9+quin,22+r8,14,3)
+        ctx.fillRect(11+quin,16+r8,10,6)
+        ctx.fillRect(9+quin,13+r8,14,3)
+        ctx.fillRect(12+quin,10+r8,8,3)
+        ctx.fillRect(11+quin,7+r8,10,3)
+        ctx.fillRect(15+quin,2+r8,2,6)
+        ctx.beginPath()
+        ctx.arc(19+quin,7+r8,3,0.5/4*Math.PI,3.5/4*Math.PI,true)
+        ctx.arc(13+quin,7+r8,3,0.5/4*Math.PI,3.5/4*Math.PI,true)
+        // ctx.arc(16+quin,5+c,2,3.999999/4*Math.PI,4/4*Math.PI,true)
+       ctx.fill()
+    </script>
+</body>
+</html>
